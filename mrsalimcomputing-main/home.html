@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn with Mr Salim : Computing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+</head>
+
+<body>
+  <!-- WELCOME BANNER -->
+  <div id="userWelcome" class="welcome-banner"></div>
+
+  <!-- MOTIVATIONAL QUOTE -->
+  <div class="quote-banner">
+    “Every click is progress — keep learning, keep growing.”
+  </div>
+
+  <!-- LANGUAGE SELECTOR -->
+  <div class="language-selector">
+    <select id="languageSelect" onchange="changeLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+      <option value="ar">العربية</option>
+    </select>
+  </div>
+
+  <!-- LOGOUT BUTTON -->
+  <button id="logoutBtn" class="logout-btn">Logout</button>
+
+  <!-- MAIN MENU -->
+  <div id="menuScreen" class="menu-screen">
+    <h1 class="menu-title">Learn with Mr Salim</h1>
+    <p class="menu-subtitle">Computing made fun, fast, and interactive.</p>
+
+    <div class="button-row">
+      <button class="menu-btn" onclick="window.location.href='ks3.html'">KS3</button>
+      <button class="menu-btn locked" onclick="alert('KS4 is locked — Coming Soon!')">
+        KS4 🔒 Coming Soon
+      </button>
+      <button class="menu-btn locked" onclick="alert('KS5 is locked — Coming Soon!')">
+        KS5 🔒 Coming Soon
+      </button>
+    </div>
+  </div>
+
+  <!-- LANGUAGE SWITCH -->
+  <script>
+    function changeLanguage(lang) {
+      alert("Language changed to: " + lang);
+    }
+  </script>
+
+  <!-- USER LOGIC -->
+  <script type="module">
+    import { getCurrentUser } from "./userManager.js";
+
+    const user = getCurrentUser();
+    const isPlayMode = localStorage.getItem("isPlayMode") === "true";
+    const banner = document.getElementById("userWelcome");
+
+    if (isPlayMode) {
+      banner.textContent = "Welcome, Guest";
+    } else if (user) {
+      banner.textContent = `Welcome, ${user.username}`;
+    } else {
+      banner.textContent = "Welcome, Guest";
+    }
+
+    // Logout clears everything
+    document.getElementById("logoutBtn").onclick = () => {
+      localStorage.clear();
+      window.location.href = "index.html";
+    };
+  </script>
+
+  <!-- LOAD FIREBASE -->
+  <script type="module" src="./firebaseConfig.js"></script>
+  <script type="module" src="./main.js"></script>
+  <script type="module" src="./headerUser.js"></script>
+</body>
+</html>
+
+
+
+
+

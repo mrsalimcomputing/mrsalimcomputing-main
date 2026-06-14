@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="style.css" />
+
+ 
+</head>
+
+<body>
+  <h1 id="leaderboardTitle">Leaderboard</h1>
+
+  <div class="leaderboard-container">
+    <div class="mode-box" id="theorySection">
+      <h2>Theory Mode</h2>
+      <div class="section-title">Personal Best Score</div>
+      <div id="theoryPersonal">Loading...</div>
+      <div class="section-title">Your School / Session Top 5</div>
+      <div id="theorySchool">Loading...</div>
+    </div>
+
+    <div class="mode-box" id="matchingSection">
+      <h2>Matching Mode</h2>
+      <div class="section-title">Personal Best Score</div>
+      <div id="matchingPersonal">Loading...</div>
+      <div class="section-title">Your School / Session Top 5</div>
+      <div id="matchingSchool">Loading...</div>
+    </div>
+
+    <div class="mode-box" id="examSection">
+      <h2>Exam Mode</h2>
+      <div class="section-title">Personal Best Score</div>
+      <div id="examPersonal">Loading...</div>
+      <div class="section-title">Your School / Session Top 5</div>
+      <div id="examSchool">Loading...</div>
+    </div>
+
+    <div class="mode-box" id="btdSection">
+      <h2>Binary → Denary</h2>
+      <div class="section-title">Personal Best Score</div>
+      <div id="btdPersonal">Loading...</div>
+      <div class="section-title">Your School / Session Top 5</div>
+      <div id="btdSchool">Loading...</div>
+    </div>
+
+    <div class="mode-box" id="btdEasySection">
+      <h2>Binary → Denary (Easy)</h2>
+      <div class="section-title">Personal Best Score</div>
+      <div id="btdEasyPersonal">Loading...</div>
+      <div class="section-title">Your School / Session Top 5</div>
+      <div id="btdEasySchool">Loading...</div>
+    </div>
+
+    <div class="mode-box" id="dtbSection">
+      <h2>Denary → Binary</h2>
+      <div class="section-title">Personal Best Score</div>
+      <div id="dtbPersonal">Loading...</div>
+      <div class="section-title">Your School / Session Top 5</div>
+      <div id="dtbSchool">Loading...</div>
+    </div>
+
+    <div class="mode-box" id="dtbEasySection">
+      <h2>Denary → Binary (Easy)</h2>
+      <div class="section-title">Personal Best Score</div>
+      <div id="dtbEasyPersonal">Loading...</div>
+      <div class="section-title">Your School / Session Top 5</div>
+      <div id="dtbEasySchool">Loading...</div>
+    </div>
+
+    <div class="mode-box" id="baSection">
+      <h2>Binary Addition</h2>
+      <div class="section-title">Personal Best Score</div>
+      <div id="baPersonal">Loading...</div>
+      <div class="section-title">Your School / Session Top 5</div>
+      <div id="baSchool">Loading...</div>
+    </div>
+
+    <div class="mode-box" id="baEasySection">
+      <h2>Binary Addition (Easy)</h2>
+      <div class="section-title">Personal Best Score</div>
+      <div id="baEasyPersonal">Loading...</div>
+      <div class="section-title">Your School / Session Top 5</div>
+      <div id="baEasySchool">Loading...</div>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="window.history.back()">Back</button>
+
+  <script type="module" src="./firebaseConfig.js"></script>
+  <script type="module" src="./leaderboard.js"></script>
+</body>
+</html>
+
+
+
