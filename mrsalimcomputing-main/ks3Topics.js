@@ -83,6 +83,18 @@ export const ks3Topics = {
     "logic gates (AND, OR, NOT)",
     "binary addition",
     "binary addition (easy)"
+    ],
+
+    "Networks": [
+    "Network Devices (Router, Switch, WAP)",
+    "LAN and WAN",
+    "Network Topologies",
+    "Wired vs Wireless Networks",
+    "Internet, Web and Cloud",
+    "IP Addresses",
+    "MAC Addresses",
+    "Network Protocols",
+    "Bandwidth and Types of Cables",
     ]
 
 };

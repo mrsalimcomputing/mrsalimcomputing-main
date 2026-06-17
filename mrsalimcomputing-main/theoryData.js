@@ -49,6 +49,55 @@ export const theoryData = {
       ]
     },
 
+    Networks: {
+
+      "Bandwidth and Types of Cables": [
+
+      {question:"What is bandwidth?",correct:["amount of data sent per second","data sent per second"],wrong:["TWISTED PAIR","twisted pair","COAXIAL","coaxial","FIBRE OPTIC","fibre optik","computer","KEYBOARD","mouse","router","MONITOR","printer","screen","microphone","scanner","speaker"]},
+
+      {question:"What does high bandwidth mean?",correct:["lots of data can be sent","more data sent"],wrong:["slow internet","SLOW INTERNET","low bandwidth","LOW BANDWIDTH","broken cable","BROKEN CABLE","small storage","SMALL STORAGE","weak signal","WEAK SIGNAL","less memory","LESS MEMORY","less data send ","FEW DATA SENT","no internet","NO INTERNET"]},
+
+      {question:"What does low bandwidth mean?",correct:["less data can be sent","FEW DATA SENT"],wrong:["high bandwidth","HIGH BANDWIDTH","fast internet","FAST INTERNET","more storage","MORE STORAGE","strong signal","STRONG SIGNAL","High amount of data sent","BETTER SECURITY","more memory","LOTS OF DATA SENT","new computer","HIGH DATA","large screen","LARGE SCREEN"]},
+
+      {question:"Which cable has the highest bandwidth?",correct:["FIBRE OPTIC","fibre optic"],wrong:["TWISTED PAIR","twisted pair","COAXIAL","coaxial","fibre optik","FIBER OPTIC","usb cable","USB CABLE","power cable","POWER CABLE","telephone cable","TELEPHONE CABLE","hdmi","HDMI","network card"]},
+
+      {question:"Which cable uses light to carry data?",correct:["FIBRE OPTIC","fibre optic"],wrong:["TWISTED PAIR","twisted pair","COAXIAL","coaxial","fibre optik","twisted paire","USB","usb","POWER CABLE","power cable","HDMI","hdmi","telephone cable","TELEPHONE CABLE","router"]},
+
+      {question:"Which cable is made from thin strands of glass?",correct:["FIBRE OPTIC","fibre optic"],wrong:["TWISTED PAIR","twisted pair","COAXIAL","coaxial","fibre optik","coaxel","USB","usb","POWER CABLE","power cable","telephone cable","TELEPHONE CABLE","HDMI","hdmi","screen"]},
+
+      {question:"Which cable is commonly used in school computer networks?",correct:["TWISTED PAIR","twisted pair"],wrong:["COAXIAL","coaxial","FIBRE OPTIC","fibre optic","twisted paire","TWISTED PAIRE","usb cable","USB CABLE","power cable","POWER CABLE","HDMI","hdmi","telephone cable","TELEPHONE CABLE","monitor"]},
+
+      {question:"What is twisted pair cable made from?",correct:["twisted wires","LONG Twisted WIRES"],wrong:["glass strands","GLASS STRANDS","light beams","LIGHT BEAMS","plastic tubes","PLASTIC TUBES","steel rods","STEEL RODS","rubber pipes","RUBBER PIPES","wireless signals","WIRELESS SIGNALS","magnets","MAGNETS","batteries"]},
+
+      {question:"Which cable is usually the cheapest?",correct:["TWISTED PAIR","twisted pair"],wrong:["FIBRE OPTIC","fibre optic","COAXIAL","coaxial","twisted paire","TWISTED PAIRE","usb cable","USB CABLE","HDMI","hdmi","telephone cable","TELEPHONE CABLE","power cable","POWER CABLE","router"]},
+
+      {question:"Which cable is often used for TV signals?",correct:["COAXIAL","coaxial"],wrong:["TWISTED PAIR","twisted pair","FIBRE OPTIC","fibre optic","coaxel","COAXEL","usb cable","USB CABLE","HDMI","hdmi","power cable","POWER CABLE","telephone cable","TELEPHONE CABLE","monitor"]},
+
+      {question:"Which cable has a metal core and shielding?",correct:["COAXIAL","coaxial"],wrong:["TWISTED PAIR","twisted pair","FIBRE OPTIC","fibre optic","coaxel","COAXEL","usb cable","USB CABLE","HDMI","hdmi","telephone cable","TELEPHONE CABLE","power cable","POWER CABLE","speaker"]},
+
+      {question:"Which cable is least affected by interference?",correct:["FIBRE OPTIC","fibre optic"],wrong:["TWISTED PAIR","twisted pair","COAXIAL","coaxial","fibre optik","FIBER OPTIC","usb cable","USB CABLE","HDMI","hdmi","power cable","POWER CABLE","telephone cable","TELEPHONE CABLE","printer"]},
+
+      {question:"Which cable can send data the furthest distance?",correct:["FIBRE OPTIC","fibre optic"],wrong:["TWISTED PAIR","twisted pair","COAXIAL","coaxial","fibre optik","FIBER OPTIC","usb cable","USB CABLE","HDMI","hdmi","telephone cable","TELEPHONE CABLE","power cable","POWER CABLE","scanner"]},
+
+      {question:"What is a benefit of fibre optic cable?",correct:["very fast","SUPER FAST"],wrong:["uses radio waves","USES RADIO WAVES","needs no wires","NEEDS NO WIRES","stores files","STORES FILES","creates backups","CREATES BACKUPS","adds memory","ADDS MEMORY","charges devices","CHARGES DEVICES","blocks viruses","BLOCKS VIRUSES"]},
+
+      {question:"Which cable has more bandwidth than twisted pair?",correct:["FIBRE OPTIC","fibre optic"],wrong:["COAXIAL","coaxial","twisted pair","TWISTED PAIR","fibre optik","FIBER OPTIC","usb cable","USB CABLE","HDMI","hdmi","power cable","POWER CABLE","telephone cable","TELEPHONE CABLE","monitor"]},
+
+      {question:"What does bandwidth affect?",correct:["how fast data can be transferred","How Quick data can be sent"],wrong:["screen size","SCREEN SIZE","battery life","BATTERY LIFE","speaker volume","SPEAKER VOLUME","keyboard layout","KEYBOARD LAYOUT","monitor brightness","MONITOR BRIGHTNESS","desk size","DESK SIZE","camera quality","CAMERA QUALITY"]},
+
+      {question:"Which cable is best for a very fast internet connection?",correct:["FIBRE OPTIC","fibre optic"],wrong:["TWISTED PAIR","twisted pair","COAXIAL","coaxial","fibre optik","FIBER OPTIC","usb cable","USB CABLE","HDMI","hdmi","telephone cable","TELEPHONE CABLE","power cable","POWER CABLE","router"]},
+
+      {question:"Which cable is most likely to be used inside an office network?",correct:["TWISTED PAIR","twisted pair"],wrong:["COAXIAL","coaxial","FIBRE OPTIC","fibre optic","twisted paire","TWISTED PAIRE","usb cable","USB CABLE","HDMI","hdmi","telephone cable","TELEPHONE CABLE","power cable","POWER CABLE","speaker"]},
+
+      {question:"Which has the highest bandwidth?",correct:["FIBRE OPTIC","fibre optic"],wrong:["TWISTED PAIR","twisted pair","COAXIAL","coaxial","fibre optik","FIBER OPTIC","low bandwidth","LOW BANDWIDTH","usb cable","USB CABLE","telephone cable","TELEPHONE CABLE","power cable","POWER CABLE","monitor"]},
+
+      {question:"What is another name for twisted pair cable used in networks?",correct:["ETHERNET CABLE","ethernet cable"],wrong:["FIBRE OPTIC","fibre optic","COAXIAL","coaxial","ethernet cabel","ETHERNET CABEL","usb cable","USB CABLE","HDMI cable","hdmi cable","power cable","POWER CABLE","telephone cable","TELEPHONE CABLE","speaker wire"]}
+              
+      ]
+
+    },
+
+
     "Programming": {
 
       "Data Types": [
