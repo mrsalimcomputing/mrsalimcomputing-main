@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KS4 Topics</title>
+
+    <!-- GLOBAL STYLES -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- KS4‑ONLY STYLES -->
+    <link rel="stylesheet" href="ks4.css">
+</head>
+
+<body>
+
+    <!-- 🔹 BACK BUTTON -->
+    <button class="back-btn" onclick="goBack()">Back</button>
+
+    <!-- 🔹 WELCOME BANNER -->
+    <div id="userWelcome" class="welcome-banner" style="text-align:center; width:100%;"></div>
+
+    <!-- 🔹 LANGUAGE SELECTOR -->
+    <div class="language-selector" style="position:absolute; top:15px; right:110px;">
+        <select id="languageSelect" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="ar">العربية</option>
+        </select>
+    </div>
+
+    <!-- 🔹 LOGOUT BUTTON -->
+    <button id="logoutBtn" class="logout-btn" style="top:15px; right:20px;">Logout</button>
+
+    <!-- ============================================================
+         KS4 CONTAINER
+         ============================================================ -->
+    <div class="ks4-container">
+
+        <div class="menu-screen">
+            <h1 class="menu-title" id="unitTitle">KS4 Topics</h1>
+            <p class="menu-subtitle">Choose a Topic:</p>
+
+            <div id="topicButtons" class="ks4-grid"></div>
+        </div>
+
+    </div>
+
+    <!-- 🔹 USER HEADER SCRIPT -->
+    <script type="module" src="./headerUser.js"></script>
+
+    <!-- 🔹 TOPICS LOADING SCRIPT -->
+    <script type="module">
+        import { ks4Topics } from "./ks4Topics.js";
+
+        const params = new URLSearchParams(window.location.search);
+        const course = decodeURIComponent(params.get("course"));
+        const unit = decodeURIComponent(params.get("unit"));
+        const topic = decodeURIComponent(params.get("topic"));
+
+        document.getElementById("unitTitle").innerText = topic;
+
+        const unitData = ks4Topics[course][unit];
+        const subtopics = unitData.subtopics[topic];
+        const container = document.getElementById("topicButtons");
+
+        if (subtopics && subtopics.length > 0) {
+
+            subtopics.forEach((sub, index) => {
+                const btn = document.createElement("button");
+                btn.className = "ks4-btn";
+
+                const cleanSub = sub.replace(/^\d+(\.\d+)?\s*/, "").trim();
+
+                // ⭐ FIRST BUTTON = UNLOCKED ("Types of design tool")
+                if (index === 0) {
+                    btn.innerText = sub;
+                    btn.onclick = () => {
+                        window.location.href =
+                            `ks4-topic-options.html?course=${encodeURIComponent(course)}&unit=${encodeURIComponent(unit)}&topic=${encodeURIComponent(cleanSub)}`;
+                    };
+                }
+
+                // 🔒 ALL OTHER BUTTONS LOCKED
+                else {
+                    btn.classList.add("locked");
+                    btn.innerHTML = `${sub} 🔒`;
+                    btn.onclick = () => alert(`${cleanSub} is locked — Coming Soon!`);
+                }
+
+                container.appendChild(btn);
+            });
+
+        } else {
+            const cleanTopic = topic.replace(/^\d+(\.\d+)?\s*/, "").trim();
+
+            window.location.href =
+                `ks4-topic-options.html?course=${encodeURIComponent(course)}&unit=${encodeURIComponent(unit)}&topic=${encodeURIComponent(cleanTopic)}`;
+        }
+    </script>
+
+    <!-- 🔹 FIXED KS4 BACK BUTTON -->
+    <script type="module">
+        import { goBackKS4 } from "./ks4-navigation.js";
+        window.goBack = goBackKS4;
+
+        function changeLanguage(lang) {
+            alert("Language changed to: " + lang);
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
